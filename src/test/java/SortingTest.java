@@ -30,7 +30,9 @@ public class SortingTest {
     public static Collection sorter() {
 
         return Arrays.asList(new int[][][] {
-                {{51,2,3,4,5},{2,3,4,5,51}} //boundary value 50
+                {{51,2,3,4,5500, 10000},{}},//upper boundary value 50 returns empty array
+                {{-1,-500,-1000, 1, 2, 3, 4, 5}, {}}, //lower boundary value 0 -||-
+                {{2,3,1,9,8,2}, {1,2,2,3,8,9}}
         });
 
 
