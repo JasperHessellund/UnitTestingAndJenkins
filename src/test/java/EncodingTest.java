@@ -33,6 +33,7 @@ public class EncodingTest {
                 {"FifteenLetterss", ")())))(())))())"},
                 {"", ""}, //Lower boundary is 1, returns an empty string
                 {"1","("},
+                {"zoo", "())"},
                 { "   ()(   ","))))())))"},
                 { "koenjolle","())(())))"},
                 { "testexam","))())((("},
