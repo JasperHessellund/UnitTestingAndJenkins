@@ -1,8 +1,9 @@
+import java.util.Arrays;
 
 public class Sorting {
 
-    public int[] sort (int[] array, boolean sortAscending) {
 
+    public int[] sort (int[] array, boolean sortAscending) {
         for (int i = 0; i < array.length; i++) {
             if (array[i] < 0 || array[i] > 50) {
                 return new int[]{};

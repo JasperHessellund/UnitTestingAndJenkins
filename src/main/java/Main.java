@@ -20,7 +20,7 @@ public class Main {
                 arr = sorting.sort(arr, true);
             break;
             default:
-                arr = sorting.sort(arr, false);
+                arr = sorting.sort(arr, true);
             break;
         }
 

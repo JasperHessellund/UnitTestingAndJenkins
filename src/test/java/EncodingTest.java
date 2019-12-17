@@ -29,8 +29,12 @@ public class EncodingTest {
     @Parameterized.Parameters
     public static Collection encoder() {
         return Arrays.asList(new Object[][] {
-                {"Prespecialized",")()())()(()()("},
-                { "   ()(   ","))))())))"}
+                {"Prespecialized",")()())()" +
+                        "(()()("},
+                { "   ()(   ","))))())))"},
+                { "koenjolle","())(())))"},
+                { "testexam","))())((("},
+                { "Arturo","()(()("},
         });
     }
 
