@@ -27,7 +27,7 @@ public class EncodingTest {
 
 
     @Parameterized.Parameters
-    public static Collection encoder() {
+    public static Collection testCases() {
         return Arrays.asList(new Object[][] {
                 {"Prespecialized",")()())()" +
                         "(()()("},

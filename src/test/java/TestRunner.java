@@ -6,6 +6,7 @@ public class TestRunner {
     public static void main(String[] args) {
         encodingTestResult();
         sortingTestResult();
+        circleAreaTestResult();
     }
     public static void encodingTestResult () {
         Result result = JUnitCore.runClasses(EncodingTest.class);
@@ -17,6 +18,15 @@ public class TestRunner {
     }
     public static void sortingTestResult () {
         Result result = JUnitCore.runClasses(SortingTest.class);
+
+        for (Failure failure : result.getFailures()) {
+            System.out.println(failure.toString());
+        }
+        System.out.println(result.wasSuccessful());
+    }
+
+    public static void circleAreaTestResult(){
+        Result result = JUnitCore.runClasses(CircleAreaTest.class);
 
         for (Failure failure : result.getFailures()) {
             System.out.println(failure.toString());
