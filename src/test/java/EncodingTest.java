@@ -29,8 +29,10 @@ public class EncodingTest {
     @Parameterized.Parameters
     public static Collection testCases() {
         return Arrays.asList(new Object[][] {
-                {"Prespecialized",")()())()" +
-                        "(()()("},
+                {"Letterlongerthanboundary",""}, //Upper boundary is 15 characters, returns an empty string
+                {"FifteenLetterss", ")())))(())))())"},
+                {"", ""}, //Lower boundary is 1, returns an empty string
+                {"1","("},
                 { "   ()(   ","))))())))"},
                 { "koenjolle","())(())))"},
                 { "testexam","))())((("},

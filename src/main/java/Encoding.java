@@ -10,6 +10,9 @@ public class Encoding {
         word = word.toLowerCase();
         String result = "";
         int count = 0;
+        if (word.length() < 1 || word.length() > 15) {
+            return result;
+        }
         for (int i = 0; i < word.length(); i++) {
             for (int j = 0; j < word.length(); j++) {
                 if (String.valueOf(word.charAt(i)).equals(String.valueOf(word.charAt(j)))) count++;
