@@ -34,7 +34,7 @@ public class SortingTest {
                 {new int[]{51, 50, 49, 4, 5500, 10000}, true, new int[]{}},//upper boundary value 50 returns empty array
                 {new int[]{-1, -500, -1000, 1, 0, 3, 4, 5}, true, new int[]{}}, //lower boundary value 0 -||-
                 {new int[]{2, 3, 1, 9, 8, 2}, true, new int[]{1, 2, 2, 3, 8, 9}},
-                {new int[]{2, 3, 1, 9, 8, 2}, false, new int[]{9, 8, 3, 2, 2, 1}},
+                {new int[]{2, 3, 1, 9, 8, 2}, true, new int[]{9, 8, 3, 2, 2, 1}},
 
         });
     }
