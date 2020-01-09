@@ -44,5 +44,4 @@ public class SortingTest {
         System.out.println("Parameterized sorting is: " + Arrays.toString(inputArray));
         assertArrayEquals(expectedResult, sorting.sort(inputArray, sortAscending));
     }
-
 }
